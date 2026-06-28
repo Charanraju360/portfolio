@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --color-pastel-teal: #BAE0DA;
+  --color-pastel-coral: #F2D6CE;
+  --color-pastel-bg: #F2E7DD;
+  --color-pastel-card: #FFFFFF;
+  --color-pastel-dark-bg: #0F172A;
+  --color-pastel-gray: #A1B5A8;
+  --color-pastel-slate: #1E293B;
+  --color-pastel-border: #E5E7EB;
+}
+
+@layer base {
+  :root {
+    --bg-primary: var(--color-pastel-bg);
+    --bg-card: var(--color-pastel-card);
+    --text-primary: var(--color-pastel-slate);
+    --text-secondary: var(--color-pastel-gray);
+    --accent-primary: var(--color-pastel-teal);
+    --accent-secondary: var(--color-pastel-coral);
+    --border-color: var(--color-pastel-border);
+    --shadow-color: rgba(0,0,0,0.1);
+  }
+
+  .dark {
+    --bg-primary: var(--color-pastel-dark-bg);
+    --bg-card: var(--color-pastel-slate);
+    --text-primary: var(--color-pastel-bg);
+    --text-secondary: var(--color-pastel-teal);
+    --accent-primary: #0EA5E9;
+    --accent-secondary: var(--color-pastel-coral);
+    --border-color: #334155;
+    --shadow-color: rgba(0,0,0,0.4);
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.5s ease, color 0.5s ease;
+    cursor: none; /* Custom cursor */
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .text-shadow-glow {
+    text-shadow: 0 0 10px var(--accent-primary);
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Portfolio",
+  "description": "A living UI playground blending smooth physics-driven scroll, immersive 3D scenes, and subtle micro-interactions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
